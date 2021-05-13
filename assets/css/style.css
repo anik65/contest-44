@@ -1,0 +1,63 @@
+.bullet_list {
+  margin: 100px 0;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.bullet_list li {
+  list-style: none;
+}
+.hexygon {
+  background: rgb(49, 4, 121);
+  width: 100px;
+  height: 85px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  margin-top: 22px;
+}
+.hexygon i {
+  font-size: 35px;
+  color: #fff;
+  margin-top: 27px;
+}
+.list_content {
+  border-bottom: 2px solid #000;
+  padding: 10px 15px;
+}
+.list_content h2 {
+  font-size: 30px;
+  color: rgb(49, 4, 121);
+  font-weight: 700;
+}
+.list_content p {
+  color: rgb(196, 193, 13);
+}
+@keyframes list_animation {
+  0% {
+    background: rgb(196, 193, 13);
+      transform: scale(1,1);
+  }
+  20% {
+    background: rgb(49, 4, 121);
+      transform: scale(1.02,1.02);
+  }
+  40% {
+    background: rgb(196, 193, 13);
+      transform: scale(1.04,1.04);
+  }
+  60% {
+    background: rgb(49, 4, 121);
+      transform: scale(1.06,1.06);
+  }
+  80% {
+    background: rgb(196, 193, 13);
+      transform: scale(1.08,1.08);
+  }
+  100% {
+    background: rgb(49, 4, 121);
+      transform: scale(1.1,1.1);
+  }
+}
+.bullet_list li:hover .hexygon {
+  animation: list_animation 2.5s ease-in;
+ 
+ 
+}
+ 
